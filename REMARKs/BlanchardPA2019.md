@@ -1,30 +1,47 @@
 ---
-tags:
-  - REMARK
-  - Replication
-abstract: # abstract: optional
+# CFF Required fields
+cff-version: 1.1.0 # required (don't change):
 authors: # required
   -
-    family-names: Acalin
+    family-names: "Acalin"
     given-names: "Julien"
-    orcid: "https://orcid.org/0000-0003-3732-9312"
+    orcid: https://orcid.org/0000-0002-6137-0537
+title: "Public Debt and Low Interest Rates" # required
+abstract: This notebook fully replicates the analysis of the stochastic overlapping generations (OLG) model developed by Blanchard in his presidential address during the AEA meetings 2019. # optional
+
 # REMARK fields
+remark-version: 1.1 # required - specify version of REMARK standard used
+references:  # required for replications; optional for reproductions; BibTex data from original paper
+  - type: Presidential Address
+    authors: # required
+      -
+        family-names: "Blanchard"
+        given-names: "Olivier"
+        # orcid: "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+    title: "Public Debt and Low Interest Rates" # required
+    doi: "https://doi.org/10.1257/aer.109.4.1197" # optional
+    date: 2019-04 # required
+    publisher: American Economic Review
+
+# Econ-ARK website fields?
 github_repo_url: https://github.com/econ-ark/BlanchardPA2019 # required
-version: 1.1 # required
 remark-name: BlanchardPA2019 # required 
-title-original-paper: Public Debt and Low Interest Rates # optional 
 notebooks: # path to any notebooks within the repo - optional
   - 
-    BlanchardPA2019.ipynb
+    Code/Python/BlanchardPA2019.ipynb
+
+tags: # Use the relavent tags
+  - REMARK
+  - Replication
+
 ---
 
 # Public Debt and Low Interest Rates
 
-## Replication of Blanchard (2019)
- 
-## by Julien Acalin - Johns Hopkins University
- 
-This notebook fully replicates the analysis of the stochastic overlapping generations (OLG) model developed by Blanchard in his presidential address during the AEA meetings 2019. It takes about 3 minutes to run all the simulations.The notebook can be accessed through Binder by clicking on the following icon:
+This notebook fully replicates the analysis of the stochastic overlapping generations (OLG) model developed by Blanchard in his presidential address during the AEA meetings 2019.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jacalin1/BlanchardPA2019/master)
+## References
+
+Blanchard, O. (2019). Public debt and low interest rates. American Economic Review, 109(4), 1197-1229.
+ 
 
